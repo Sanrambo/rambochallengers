@@ -1,0 +1,29 @@
+body {
+
+    overflow: hidden;
+    color: red;
+    background-color: rgb(0, 196, 230);
+}
+
+.jumbotron{
+
+    margin: 12% 30%;
+    height: 50%;
+    
+}
+
+.btn{
+
+    margin-left: 7%;
+    margin-bottom: 7%;
+}
+
+.middle{
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}

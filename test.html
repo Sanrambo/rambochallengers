@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script type='text/javascript'>
+        var button = document.getElementById('button'),
+            input = document.getElementById('input'),
+            flashClass = 'flash';
+
+        button.addEventListener('click', function () {
+            input.classList.add(flashClass);
+        });
+
+        input.addEventListener('animationend', function () {
+            this.classList.remove(flashClass);
+        });
+    </script>
+    <style>
+        .flash {
+            animation: flash .15s;
+        }
+
+        @keyframes flash {
+            50% {
+                background: green;
+            }
+
+            100% {
+                background: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input id="input" type="text">
+    <button id="button">Click</button>
+
+</body>
+
+</html>
